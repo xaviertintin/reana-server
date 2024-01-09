@@ -337,7 +337,6 @@ def get_workflows(user, **kwargs):  # noqa
               }
     """
     try:
-        import wdb; wdb.set_trace()
         type_ = request.args.get("type", "batch")
         search = request.args.get("search")
         sort = request.args.get("sort", "desc")
