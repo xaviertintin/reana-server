@@ -336,6 +336,7 @@ def get_workflows(user, **kwargs):  # noqa
                 "message": "Something went wrong."
               }
     """
+    import wdb; wdb.set_trace()
     try:
         type_ = request.args.get("type", "batch")
         search = request.args.get("search")
